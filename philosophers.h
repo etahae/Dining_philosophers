@@ -6,7 +6,7 @@
 /*   By: tnamir <tnamir@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 18:49:35 by tnamir            #+#    #+#             */
-/*   Updated: 2022/03/08 20:55:54 by tnamir           ###   ########.fr       */
+/*   Updated: 2022/03/10 18:53:10 by tnamir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,5 +51,6 @@ int			sleeping(t_info	*info);
 int			thinking(t_info	*info);
 long long	current_time(void);
 void		*death(void	*info);
+void		ultra_sleep(long long sleeptime);
 
 #endif
