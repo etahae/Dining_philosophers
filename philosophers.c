@@ -6,7 +6,7 @@
 /*   By: tnamir <tnamir@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 18:48:53 by tnamir            #+#    #+#             */
-/*   Updated: 2022/03/09 20:05:12 by tnamir           ###   ########.fr       */
+/*   Updated: 2022/03/10 20:50:29 by tnamir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,6 +90,7 @@ void	to_be_main(int argc, char **argv,
 		pthread_join(thread[x], NULL);
 		pthread_mutex_destroy(&philo->forks[x]);
 	}
+	pthread_join(deathnote, NULL);
 }
 
 int	main(int argc, char	**argv)

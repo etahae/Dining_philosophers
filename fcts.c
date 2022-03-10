@@ -6,7 +6,7 @@
 /*   By: tnamir <tnamir@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/07 14:47:54 by tnamir            #+#    #+#             */
-/*   Updated: 2022/03/10 19:05:43 by tnamir           ###   ########.fr       */
+/*   Updated: 2022/03/10 20:58:12 by tnamir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,5 +73,5 @@ void	ultra_sleep(long long sleeptime)
 
 	start = current_time();
 	while (current_time() < start + sleeptime / 1000)
-		usleep(50);
+		usleep(100);
 }

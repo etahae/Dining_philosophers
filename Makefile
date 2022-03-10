@@ -6,7 +6,7 @@
 #    By: tnamir <tnamir@student.1337.ma>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/01 18:52:29 by tnamir            #+#    #+#              #
-#    Updated: 2022/03/07 14:48:08 by tnamir           ###   ########.fr        #
+#    Updated: 2022/03/10 21:43:15 by tnamir           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@ $(NAME) : $(SRC)
 	@cc -Werror -Wall -Wextra $(SRC) -o philo
 
 clean :
-	@rm -rf lmao
+	@rm -rf philo
 
 fclean : clean
 

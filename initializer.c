@@ -6,7 +6,7 @@
 /*   By: tnamir <tnamir@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:35:02 by tnamir            #+#    #+#             */
-/*   Updated: 2022/03/08 20:57:15 by tnamir           ###   ########.fr       */
+/*   Updated: 2022/03/10 20:45:25 by tnamir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,6 @@ void	initializer(int c, char **v, t_philo *philo, int x)
 	philo->info[x].right_fork = &philo->forks[(x + 1) % philo->philo_nbr];
 	philo->info[x].state = &philo->state;
 	philo->info[x].philo_nbr = &philo->philo_nbr;
+	philo->info[x].start = current_time();
+	philo->info[x].death_time_reset = current_time();
 }
